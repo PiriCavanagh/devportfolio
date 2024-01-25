@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <div class="background">
+        <nav id="deskstop-nav">
+            <div class="logo">Piri Cavanagh</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Piri Cavanagh</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="togglemenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="togglemenu()">About me</a></li>
+                    <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./assets/profile-pic-circle.png" alt="piri Cavanagh profile picture">
+            </div>
+            <div class="section_text">
+                <h1 class="title">Piri Cavangh</h1>
+                <p class="section_text_p2">Web Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/piri cavanagh resume.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div class="socials-container">
+                    <img src="./assets/linkedin.png" alt="my linkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/piri-cavanagh-a5811928b/'">
+                    <img src="./assets/github.png" alt="my github profile" class="icon" onclick="location.href='https://github.com/PiriCavanagh'">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">get to know more</p>
+            <h1 class="title">about me</p>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/uni.jpg" alt="" srcset="profile picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="" srcset="experience icon" class="icon">
+                            <h3>I.T Diploma</h3>
+                            <p>TAFE<br>2019</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="" srcset="education icon" class="icon">
+                            <h3>I.T Bachelor</h3>
+                            <p>Computer Sicence Major <br>QUT<br>2022</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p class="aboutmeparagraph">Hi my name is Piri Cavanagh and I recently graduat looking to break into the industry. to show my passion and expertise in the field of webdevelopment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experience">
+            <p class="section_text_p1">Explore my</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend development</h2>
+                        <div class="article-container">
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>C#/.net</h3>
+                                    <p>Imtermediate</p>
+                                </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>JAVASCRIPT</h3>
+                                    <p>Imtermediate</p>
+                                </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>CMS</h3>
+                                    <p>Imtermediate</p>
+                                </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>SEO</h3>
+                                    <p>Basic
+                                    </p>
+                                </div>
+                            </article>  
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend development</h2>
+                        <div class="article-container">
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>Node JS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>Fetch API</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>React</h3>
+                                    <p>Imtermediate</p>
+                                </div>
+                            </article>
+                            <article><img src="./assets/checkmark.png" alt="experience icon" srcset="" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Imtermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <p class="section_text_p1">Browse my recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/presetwebsite.jpg" alt="project 1" srcset="" class="project-img">
+                        </div>
+                        <h2 class="experince-sub-title project-title">website for my music business built with Wordpress</h2>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/reactapp.png" alt="project 1" srcset="" class="project-img">
+                        </div>
+                        <h2 class="experince-sub-title project-title">IOT solution for tracking the use of hospital beds</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PiriCavanagh/react-app'">github</button> 
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/eventmanagementwebsite.png" alt="project 1" srcset="" class="project-img">
+                        </div>
+                        <h2 class="experince-sub-title project-title">Event Mananagement Website</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/PiriCavanagh/neweventmanagmentsite'">github</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <p class="section_text_p1">get in touch
+            </p>
+            <h1 class="title">Contact me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="email icon" srcset="" class="icon contact-icon email-icon">
+                    <p><a href="mailto:Piricavanagh@gmail.com">Piricavanagh@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="linkedin icon" srcset="" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/piri-cavanagh-a5811928b/">Linkedin</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav links container">
+                    <ul class="nav-links">
+                    <li><a hrefs="#about" onclick="togglemenu()">About me</a></li>
+                    <li><a hrefs="#about" onclick="togglemenu()">Projects</a></li>
+                    <li><a hrefs="#about" onclick="togglemenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>copyright &#169; 2024 Piri Cavanag. All Rights Reserved</p>
+        </footer>
+    </div>
+ <script src="script.js"></script>   
+</body>
+</html>
